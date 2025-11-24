@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Velvet Paws</title>
+<link  rel="stylesheet" href= "style.css"/>
+</head>
+    <body>
+        
+        <div id="header-placeholder"></div>
+        
+        <main class="container">
+            <h2 style="text-align: center;">Галерея наших котят</h2>
+            <div class="gallery-full">
+                <img src="img/1.jpg" alt="Котенок">
+                <img src="img/abb1.jpg" alt="Абиссинский котенок">
+                <img src="img/2.jpg" alt="Котенок">
+                <img src="img/3.jpg" alt="Котенок">
+                <img src="img/4.jpg" alt="Котенок">
+                <img src="img/5.jpg" alt="Котенок">
+                <img src="img/6.jpg" alt="Котенок">
+                <img src="img/8.jpg" alt="Котенок">
+                <img src="img/9.jpg" alt="Котенок">
+                <img src="img/10.jpg" alt="Котенок">
+                <img src="img/11.jpg" alt="Котенок">
+                <img src="img/12.jpg" alt="Котенок">
+                <img src="img/13.jpg" alt="Котенок">
+                <img src="img/14.jpg" alt="Котенок">
+                <img src="img/15.jpg" alt="Котенок">
+                <img src="img/16.jpg" alt="Котенок">
+                <img src="img/17.jpg" alt="Котенок">
+                <img src="img/18.jpg" alt="Котенок">
+                <img src="img/20.jpg" alt="Котенок">
+                <img src="img/21.jpg" alt="Котенок">
+                <img src="img/24.jpg" alt="Котенок">
+                <img src="img/abs1.jpg" alt="Абиссинский котенок">
+                <img src="img/abs2.jpg" alt="Абиссинский котенок">
+                <img src="img/abs3.jpg" alt="Абиссинский котенок">
+                <img src="img/abs4.jpg" alt="Абиссинский котенок">
+                <img src="img/abs5.png" alt="Абиссинский котенок">
+                <img src="img/beng1.jpg" alt="Бенгальский котенок">
+                <img src="img/beng2.jpg" alt="Бенгальский котенок">
+                <img src="img/beng3.jpg" alt="Бенгальский котенок">
+                <img src="img/beng4.jpg" alt="Бенгальский котенок">
+                <img src="img/beng5.png" alt="Бенгальский котенок">
+                <img src="img/brit1.jpg" alt="Британский короткошерстный котенок">
+                <img src="img/brit2.jpg" alt="Британский короткошерстный котенок">
+                <img src="img/brit3.JF2NC7hAv4HrTnUCNZ4nPQ4ToSpWWxn7TaWsH6N0bLQ" alt="Британский короткошерстный котенок">
+                <img src="img/brit4.jpg" alt="Британский короткошерстный котенок">
+                <img src="img/brit5.jpg" alt="Британский короткошерстный котенок">
+                <img src="img/ciam1.jpg" alt="Сиамский котенок">
+                <img src="img/ciam2.jpg" alt="Сиамский котенок">
+                <img src="img/ciam3.jpg" alt="Сиамский котенок">
+                <img src="img/ciam4.jpg" alt="Сиамский котенок">
+                <img src="img/ciam5.jpg" alt="Сиамский котенок">
+                <img src="img/cvin1.jpg" alt="Котенок">
+                <img src="img/cvin2.jpg" alt="Котенок">
+                <img src="img/cvini1.jpg" alt="Сфинкс">
+                <img src="img/cvini2.jpg" alt="Сфинкс">
+                <img src="img/cvini3.png" alt="Сфинкс">
+                <img src="img/cvini4.jpg" alt="Сфинкс">
+                <img src="img/cvini5.jpg" alt="Сфинкс">
+                <img src="img/kot1.jpg" alt="Котенок">
+                <img src="img/kot2.jpg" alt="Котенок">
+                <img src="img/kot3.jpg" alt="Котенок">
+                <img src="img/lox1.jpg" alt="Котенок">
+                <img src="img/lox2.jpg" alt="Котенок">
+                <img src="img/men1.png" alt="Мейнкун">
+                <img src="img/men2.jpg" alt="Мейнкун">
+                <img src="img/men3.png" alt="Мейнкун">
+                <img src="img/men4.png" alt="Мейнкун">
+                <img src="img/men5.jpg" alt="Мейнкун">
+                <img src="img/orient 1.jpg" alt="Ориентал">
+                <img src="img/orient3.jpg" alt="Ориентал">
+                <img src="img/orient4.jpg" alt="Ориентал">
+                <img src="img/orinet2.jpg" alt="Ориентал">
+                <img src="img/pers1.png" alt="Персидский котенок">
+                <img src="img/pers2.jpg" alt="Персидский котенок">
+                <img src="img/pers3.jpg" alt="Персидский котенок">
+                <img src="img/pers4.jpg" alt="Персидский котенок">
+                <img src="img/pers5.jpg" alt="Персидский котенок">
+                <img src="img/rag1.jpg" alt="Рэгдолл котенок">
+                <img src="img/rag2.jpg" alt="Рэгдолл котенок">
+                <img src="img/rag3.jpg" alt="Рэгдолл котенок">
+                <img src="img/rag4.jpg" alt="Рэгдолл котенок">
+                <img src="img/rag5.jpg" alt="Рэгдолл котенок">
+            </div>
+        </main>
+        
+        <div id="footer-placeholder"></div>
+
+<script>
+  // Функция для загрузки содержимого из файла
+  function includeHTML(elementId, fileName) {
+    fetch(fileName)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById(elementId).innerHTML = data;
+      });
+  }
+
+  // Загружаем шапку и подвал
+  includeHTML('header-placeholder', 'header.html');
+  includeHTML('footer-placeholder', 'footer.html');
+</script>
+    </body>

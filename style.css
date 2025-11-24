@@ -1,0 +1,381 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Современный и читабельный шрифт */
+  margin: 0;
+  padding: 0;
+  background-color: #F8F0E3; /* Светло-бежевый фон */
+  color: #5C4033; /* Мягкий коричневый для основного текста */
+}
+
+/* Общие стили */
+.header, .footer {
+  background-color: #F7CAC9; /* Нежный розовый */
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF; /* Белый текст для контраста */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 48px; 
+  margin: 0;
+  font-weight: bold;
+  color: #FFFFFF; /* Белый цвет для названия */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+h1, h2 {
+  margin: 0 0 15px 0;
+  font-family: 'Dancing Script', cursive; /* Игривый шрифт для заголовков */
+  color: #CC6699; /* Приглушенный розовый для заголовков */
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Контейнеры и разделы */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  background-color: #FFF9F2; /* Очень светло-бежевый фон для блоков */
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* Мягкая тень */
+  color: #5C4033; /* Мягкий коричневый текст */
+}
+
+/* Заголовки блоков */
+.section h2 {
+  margin-top: 0; /* Убедимся, что нет верхнего отступа */
+  text-align: left; /* Выравнивание по левому краю */
+  color: #CC6699; /* Приглушенный розовый для заголовков */
+  /* Удаляем bottom padding и after pseudo-element если они создают центровку */
+  padding-bottom: 0;
+}
+
+/* Списки и пункты */
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+  color: #5C4033; /* Соответствие основному тексту */
+}
+
+/* Стили для сетки пород */
+.breed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.breed-item {
+  /* background-color: #F8F8F8; */ /* Убираем фон */
+  padding: 0; /* Убираем отступы */
+  border-radius: 0; /* Убираем скругления */
+  text-align: center;
+  font-weight: normal; /* Убираем жирный шрифт */
+  color: #333; /* Устанавливаем более темный цвет текста */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */ /* Убираем тень */
+  transition: none; /* Убираем переходы */
+}
+
+.breed-item:hover {
+  transform: none; /* Убираем эффект при наведении */
+}
+
+/* NAVIGATION BUTTONS */
+.header nav a {
+  color: #5C4033; /* Мягкий коричневый текст кнопок */
+  margin: 0 12px;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px; 
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.header nav a:hover {
+  background-color: #F7CAC9; /* Нежный розовый при наведении */
+  color: #FFFFFF; /* Белый текст */
+  transform: translateY(-2px); 
+}
+
+/* Списки */
+li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 30px;
+  color: #5C4033;
+}
+li::before {
+  content: "🐾"; /* Иконка лапки */
+  color: #CC6699; /* Приглушенный розовый для иконки */
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Галерея */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.gallery img {
+  max-width: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+}
+
+/* Полная галерея на gallery.html */
+.gallery-full {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* От 250px до максимально возможной ширины */
+  gap: 20px; /* Отступы между изображениями */
+  padding: 20px 0;
+  justify-items: center; /* Центрирование элементов внутри ячеек грида */
+}
+
+.gallery-full img {
+  width: 100%; /* Занимаем всю доступную ширину */
+  height: 200px; /* Фиксированная высота для всех изображений */
+  object-fit: cover; /* Обрезка изображения для заполнения */
+  border-radius: 15px; /* Скругленные углы */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Мягкая тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-full img:hover {
+  transform: scale(1.03); /* Увеличение при наведении */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Карточки с котятами (на странице kittens.html) */
+.gallery-kittens {
+  display: flex;
+  flex-wrap: nowrap; /* Убираем перенос на новую строку */
+  justify-content: center; /* Выравнивание по центру */
+  gap: 25px;
+  margin-top: 30px;
+  overflow-x: auto; /* Добавляем горизонтальную прокрутку, если нужно */
+  padding-bottom: 15px; /* Добавляем отступ для скроллбара */
+  width: fit-content; /* Make the flex container as wide as its content */
+  margin: 0 auto; /* Center the entire row of cards */
+}
+
+.kitten-card {
+  border: none; 
+  border-radius: 20px;
+  width: 200px; /* Уменьшаем ширину карточки */
+  height: 200px; /* Уменьшаем высоту карточки */
+  margin: 15px; 
+  background: #FFF9F2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex; /* Используем flexbox для внутреннего содержимого */
+  flex-direction: column;
+  justify-content: space-between; /* Распределяем содержимое по вертикали */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.kitten-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.kitten-card img {
+  width: 100%;
+  height: 120px; /* Уменьшаем высоту изображения */
+  object-fit: cover;
+  border-radius: 20px 20px 0 0; 
+  border-bottom: none; 
+}
+
+.kitten-info {
+  font-size: 15px; 
+  padding: 15px; 
+  color: #5C4033; 
+  flex-grow: 1; /* Позволяем информации занимать доступное пространство */
+  display: flex;
+  align-items: center; /* Выравнивание текста по центру вертикали */
+  justify-content: center; /* Выравнивание текста по центру горизонтали */
+}
+
+/* Карточки котов (на главной) */
+.cats-card {
+  border: none;
+  border-radius: 20px;
+  width: 280px;
+  margin: 15px;
+  background: #FFF9F2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.cats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.cats-card img {
+  width: 100%;
+  height: 150px; /* Уменьшим высоту изображения */
+  border-radius: 20px 20px 0 0;
+}
+.cats-info {
+  font-size: 15px;
+  padding: 15px;
+  color: #5C4033;
+}
+
+/* Контактная форма */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  margin-bottom: 15px;
+  padding: 15px 22px;
+  border-radius: 12px;
+  border: 1px solid #E0BBE4; /* Мягкий фиолетово-розовый бордер */
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #CC6699; /* Приглушенный розовый фокус */
+  box-shadow: 0 0 10px rgba(204, 102, 153, 0.4);
+  outline: none;
+  transform: scale(1.01);
+}
+.contact-form button {
+  background: linear-gradient(90deg, #F7CAC9, #CC6699); /* Розовый градиент */
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+.contact-form button:hover {
+  background: linear-gradient(90deg, #CC6699, #B35F8A); /* Темнее при наведении */
+  transform: scale(1.02);
+}
+
+/* Ссылки */
+a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #CC6699; /* Приглушенный розовый для ссылок */
+}
+a img {
+  margin-right: 8px;
+  transition: transform 0.3s;
+}
+a:hover img {
+  transform: scale(1.2);
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #FFF9F2;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  color: #5C4033;
+}
+
+.close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #CC6699;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-to-cart-button {
+  background-color: #CC6699; /* Приглушенный розовый */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #B35F8A;
+  transform: scale(1.02);
+}
+
+@media(max-width: 768px) {
+  .cats-card {
+    width: 100%;
+  }
+  .gallery {
+    justify-content: center;
+  }
+}

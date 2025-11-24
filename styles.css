@@ -1,0 +1,26 @@
+
+  .why-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Расстояние между колонками */
+  }
+
+  .section {
+    margin: 20px;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  /* Респонсивность: на мобильных устройствах одна колонка */
+  @media (max-width: 768px) {
+    .why-us-grid {
+      grid-template-columns: 1fr;
+    }
+  }

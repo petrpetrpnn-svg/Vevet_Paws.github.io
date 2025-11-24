@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Velvet Paws</title>
+<link  rel="stylesheet" href= "style.css"/>
+<link  rel="stylesheet" href= "styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<!-- Главная страница -->
+<section id="home" class="container">
+  <p style="text-align:center; font-style:italic; font-weight:bold; font-size:28px;">Питомник премиальных породистых котят</p>
+  <p style="text-align:center; font-style:italic;">где каждая Бархатная лапка находит свой дом</p>
+  
+  <!-- Блок: О питомнике -->
+  <div class="section">
+    <h2>О питомнике</h2>
+    <p>Velvet Paws — это домашний питомник, в котором мы разводим породистых котят с идеальным здоровьем, мягким характером и выдающимися родословными. Наши малыши растут в атмосфере заботы и любви, поэтому в новый дом приезжают ласковыми, социализированными и готовыми к общению.</p>
+  </div>
+  
+  <!-- Блок: Наши породы -->
+  <div class="section">
+    <h2>Наши породы</h2>
+    <div class="breed-grid">
+      <div class="breed-item">Ориентал</div>
+      <div class="breed-item">Мейн-кун</div>
+      <div class="breed-item">Сфинкс</div>
+      <div class="breed-item">Бенгальская</div>
+      <div class="breed-item">Британская короткошерстная</div>
+      <div class="breed-item">Персидская</div>
+      <div class="breed-item">Сиамская</div>
+      <div class="breed-item">Рэгдолл</div>
+      <div class="breed-item">Абиссинская</div>
+    </div>
+  </div>
+  
+  <!-- Галерея котят -->
+  <div class="section" id="gallery">
+    <h2>Галерея котят</h2>
+    <div class="gallery">
+      <!-- Примеры изображений, замените src на свои фото -->
+      <img src="img/lox1.jpg" alt="Котенок 1" />
+      <img src="img/rag3.jpg" alt="Котенок 2" />
+      <img src="img/kot1.jpg" alt="Котенок 3" />
+      <img src="img/cvin2.jpg" alt="Котенок 4" />
+      <img src="img/abs1.jpg" alt="Котенок 5" />
+    </div>
+  </div>
+  
+  <!-- Почему выбирают нас -->
+<div class="section">
+  <h2>Почему выбирают нас</h2>
+  <div class="why-us-grid">
+    <div class="column">
+      <ul>
+        <li><strong>Котята выращены в семье:</strong> Мы заботимся о каждом питомце, обеспечивая комфорт и любовь с первого дня.</li>
+        <li><strong>Полный пакет документов:</strong> Все необходимые документы для легальной сделки и ветеринарного сопровождения.</li>
+        <li><strong>Качественная ветеринарная поддержка:</strong> Регулярные осмотры и профилактика для здоровья котят.</li>
+        <li><strong>Поддержка хозяев после переезда:</strong> Консультации и помощь в адаптации питомца у нового хозяина.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul>
+        <li><strong>Индивидуальный подход:</strong> Каждая кошка получает внимание и заботу, учитывая ее особенности.</li>
+        <li><strong>Гарантия качества:</strong> Мы отвечаем за здоровье и происхождение каждого котенка.</li>
+        <li><strong>Обучение и социализация:</strong> Помогаем питомцам адаптироваться к новой среде и новым хозяевам.</li>
+        <li><strong>Ответственное разведение:</strong> Соблюдение всех стандартов и этических норм разведения.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
+  <!-- Связаться с нами -->
+  <div class="section" id="contacts">
+    <h2>Связаться с нами</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="tel" name="phone" placeholder="Телефон" required />
+      <textarea name="message" placeholder="Сообщение" rows="4" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <p>или свяжитесь через мессенджеры:  
+        <a href="https://vk.com/okmlnf" target="_blank" style="display:inline-block; margin-right:15px; text-decoration:none;">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/vk.svg" alt="VK" style="width:24px; height:24px; vertical-align:middle; margin-right:8px;" />
+    Вконтакте
+        </a>
+        <a href="https://t.me/@hnsidew" target="_blank" style="display:inline-block; text-decoration:none;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" style="width:24px; height:24px; vertical-align:middle; margin-right:8px;" />
+    Telegram
+        </a>
+    </p>
+  </div>
+</section>
+
+<!-- Страница "О питомнике" -->
+<section id="about" class="container" style="display:none;">
+  <h2 style="text-align:center;">Velvet Paws — питомник, созданный с любовью</h2>
+  <p>Наш питомник появился из искренней любви к кошкам и желания выращивать здоровых, красивых и уравновешенных котят. Мы тщательно подбираем производителей, ориентируясь не только на внешние стандарты породы, но и на характер — нам важно, чтобы наши малыши были настоящими компаньонами.</p>
+  <p>Мы уделяем большое внимание:
+  <ul>
+    <li>высокому качеству питания</li>
+    <li>ветеринарному контролю</li>
+    <li>грамотной социализации</li>
+    <li>уютным и безопасным условиям содержания</li>
+  </ul></p>
+  <p>Каждый котёнок Velvet Paws растёт как член семьи: с нами он играет, получает внимание, учится общению и чувствует заботу.</p>
+  <p>Мы гордимся тем, что наши выпускники радуют семьи по всему региону и становятся настоящим украшением дома.</p>
+</section>
+
+<!-- Страница "Котята в продаже" -->
+<section id="kittens" class="container" style="display:none;">
+  <h2 style="text-align:center;">Свободные котята Velvet Paws</h2>
+  <!-- Карточки котят -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:center;">
+    <div class="cats-card">
+      <img src="https://placekitten.com/200/200" alt="Котенок" />
+      <div class="cats-info">
+        <strong>Имя: Мурзик</strong><br>
+        <strong>Порода:</strong> Мейн-кун<br>
+        <strong>Окрас:</strong> Тебби<br>
+        <strong>Дата рождения:</strong> 15.06.2023<br>
+        <strong>Характер:</strong> Ласковый<br>
+        <strong>Документы:</strong> Метрика, Родословная<br>
+        <strong>Статус:</strong> Свободен
+      </div>
+    </div>
+    <!-- Добавьте еще карточки по аналогии -->
+  </div>
+
+  <h3>Что входит в комплект котёнка</h3>
+  <ul>
+    <li>ветериндарный паспорт</li>
+    <li>прививки по возрасту</li>
+    <li>договор купли-продажи</li>
+    <li>рекомендации по уходу</li>
+    <li>стартовый набор (корм/наполнитель — по желанию)</li>
+  </ul>
+
+  <h3>Бронирование</h3>
+  <p>Процесс бронирования:</p>
+  <ul>
+    <li>внести предоплату</li>
+    <li>выбрать котёнка</li>
+    <li>получать фотографии и видео до переезда</li>
+  </ul>
+
+  <h3>Переезд котёнка</h3>
+  <p>Малыш едет в новый дом:</p>
+  <ul>
+    <li>не ранее 12 недель</li>
+    <li>полностью привитый</li>
+    <li>приучен к лотку и когтеточке</li>
+  </ul>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+
+  function includeHTML(elementId, fileName, callback) {
+    fetch(fileName)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById(elementId).innerHTML = data;
+        if (callback) callback();
+      });
+  }
+
+
+  console.log("index.html: Script loaded.");
+
+  includeHTML('header-placeholder', 'header.html', () => {
+    console.log("index.html: Header loaded callback.");
+    // После загрузки хедера, инициализируем корзину
+    if (window.initCart) {
+      console.log("index.html: Calling initCart().");
+      window.initCart();
+    } else {
+      console.log("index.html: window.initCart is not defined.");
+    }
+  });
+  includeHTML('footer-placeholder', 'footer.html');
+
+  // Обработка отправки формы
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+      const formData = new FormData(contactForm);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      console.log("Данные формы:", data);
+
+      // Создаем текстовое содержимое для файла
+      let fileContent = "Данные из формы Связаться с нами:\n";
+      for (const key in data) {
+        fileContent += `${key}: ${data[key]}\n`;
+      }
+
+      // Создаем Blob и ссылку для скачивания
+      const blob = new Blob([fileContent], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'contact_form_data.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      alert("Данные отправлены и сохранены в файл contact_form_data.txt!");
+      contactForm.reset(); // Очищаем форму
+    });
+  }
+
+</script>
+    
+</body>
+</html>
